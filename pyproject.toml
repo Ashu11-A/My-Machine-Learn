@@ -1,0 +1,14 @@
+[project]
+name = "idp-machine-learn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12, <3.13"
+dependencies = [
+    "cuml-cu12>=26.2.0",
+    "cupy-cuda12x>=14.0.1",
+    "matplotlib>=3.10.8",
+    "pyqt5>=5.15.11",
+    "vispy>=0.16.1",
+    "xgboost>=3.2.0",
+]
