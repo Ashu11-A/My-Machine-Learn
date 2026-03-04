@@ -9,7 +9,7 @@
 
 <br>
 
-<p align="center">
+<p>
   <strong>Machine Learning Pipeline with GPU acceleration (NVIDIA CUDA) for diabetes classification, developed by <a href="https://github.com/Ashu11-A">@Ashu11-A</a>.</strong>
   <br><br>
   <sub>
@@ -19,11 +19,15 @@
   </sub>
 </p>
 
-<p align="center">
-  <a href="https://github.com/Ashu11-A/IDP-Machine-Learn/stargazers">
-    <img src="https://img.shields.io/badge/Leave%20a%20Star%20🌟-302D41?style=for-the-badge&color=302D41&labelColor=302D41" alt="Star Repo">
-  </a>
-</p>
+<br>
+
+<img width="600" height="337" alt="Visual graphs of trained models" src="https://github.com/user-attachments/assets/a36ffae4-85a1-43b0-8b0e-575b3c400961" />
+
+<br><br>
+
+<a href="https://github.com/Ashu11-A/IDP-Machine-Learn/stargazers">
+  <img src="https://img.shields.io/badge/Leave%20a%20Star%20🌟-302D41?style=for-the-badge&color=302D41&labelColor=302D41" alt="Star Repo">
+</a>
 
 </div>
 
@@ -349,4 +353,5 @@ IDP-Machine-Learn/
         └── interaction.py
 
 ```
+
 
