@@ -77,27 +77,27 @@ The project follows a layered architecture with a clear separation of responsibi
 
 IDP-Machine-Learn/
 │
-├── main.py                          ← single entry point
+├── main.py                  ← single entry point
 │
-└── diabetes_ml/                     ← project namespace
-├── config.py                    ← PipelineConfig (frozen dataclass)
-├── pipeline.py                  ← DiabetesMLPipeline (orchestrator)
+└── diabetes_ml/             ← project namespace
+├── config.py                ← PipelineConfig (frozen dataclass)
+├── pipeline.py              ← DiabetesMLPipeline (orchestrator)
 │
 ├── data/
-│   ├── dataset.py               ← ProcessedDataset (CPU + GPU arrays)
-│   └── pipeline.py              ← DataPipeline (load → split → scale)
+│   ├── dataset.py           ← ProcessedDataset (CPU + GPU arrays)
+│   └── pipeline.py          ← DataPipeline (load → split → scale)
 │
 ├── training/
-│   ├── early_stopping.py        ← EarlyStopping + EarlyStoppingState
-│   ├── wrappers.py              ← Strategy: GPUModelWrapper + 3 models
-│   └── tuner.py                 ← HyperparameterTuner (search loop)
+│   ├── early_stopping.py    ← EarlyStopping + EarlyStoppingState
+│   ├── wrappers.py          ← Strategy: GPUModelWrapper + 3 models
+│   └── tuner.py             ← HyperparameterTuner (search loop)
 │
 └── visualization/
 ├── gpu_canvas.py            ← GPUScatterRow (vispy OpenGL)
 ├── grid.py                  ← DecisionBoundaryGrid (3D mesh on GPU)
 ├── subplots.py              ← ModelSubplotBuilder (Markers via OpenGL)
 ├── tuning_plot.py           ← TuningPlotBuilder (matplotlib)
-└── interaction.py          ← DiabetesMLWindow (Qt window)
+└── interaction.py           ← DiabetesMLWindow (Qt window)
 
 ```
 
@@ -281,8 +281,7 @@ git clone [https://github.com/Ashu11-A/IDP-Machine-Learn.git](https://github.com
 cd IDP-Machine-Learn
 
 # 2. Place the dataset in the project root
-#    Download at: [https://www.kaggle.com/datasets/johndasilva/diabetes](https://www.kaggle.com/datasets/johndasilva/diabetes)
-#    and rename to diabetes.csv
+#    Download at: https://www.kaggle.com/datasets/johndasilva/diabetes
 
 # 3. Install dependencies (recommended: uv)
 uv sync
@@ -350,3 +349,4 @@ IDP-Machine-Learn/
         └── interaction.py
 
 ```
+
