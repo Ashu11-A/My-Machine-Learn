@@ -35,7 +35,7 @@
 
 ## 📋 Table of Contents
 
-- [About the Project](#-🧠-about-the-project)
+- [About the Project](#-about-the-project)
 - [Dataset](#-dataset)
 - [Architecture](#-architecture)
 - [Models Used](#-models-used)
@@ -130,7 +130,7 @@ KNN classifies a point based on the **K nearest neighbors** in the feature space
 
 ```
 
-Best K found: 20   →   Test accuracy: 76.50%
+Best K found: 26   →   Test accuracy: 77.83%
 
 ```
 
@@ -149,7 +149,7 @@ Random Forest is an **ensemble of decision trees** trained on random subsets of 
 
 ```
 
-Best N found: 20   →   Test accuracy: 79.00%
+Best N found: 254   →   Test accuracy: 80.33%
 
 ```
 
@@ -168,7 +168,7 @@ Gradient Boosting builds trees **sequentially**: each new tree is trained to cor
 
 ```
 
-Best N found: 20   →   Test accuracy: 80.50%
+Best N found: 684   →   Test accuracy: 98.00%
 
 ```
 
@@ -205,21 +205,11 @@ The three models are searched **in parallel** step by step. The global search en
 
 ## 📈 Training Results
 
-Log of the last step before stopping:
-
-```
-Step 170 | KNN: 0.7600 (Best: 0.7650 | Pat: 150/150)
-         |  RF: 0.7950 (Best: 0.7900 | Pat: 150/150)
-         |  GB: 0.8950 (Best: 0.8050 | Pat: 150/150)
-Search completed via Early Stopping!
-
-```
-
 | Model | Best Parameter | Best Accuracy (Test) |
 | --- | --- | --- |
-| KNN | K = 20 | **76.50%** |
-| Random Forest | N = 20 | **79.00%** |
-| Gradient Boosting | N = 20 | **80.50%** |
+| KNN | K = 26 | **77.83%** |
+| Random Forest | N = 254 | **80.33%** |
+| Gradient Boosting | N = 684 | **98.00%** |
 
 **Gradient Boosting via XGBoost** achieved the highest accuracy, which is expected given that boosting algorithms tend to outperform bagging methods and simple instances when the data has complex non-linear relationships between features.
 
